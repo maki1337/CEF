@@ -1,0 +1,72 @@
+#thematic_areas_intro {
+    background: #FCFCFC;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+#thematic_areas_intro h1 {
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+#thematic_areas_intro p {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#thematic_areas_list {
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+
+#thematic_areas_list .list-item {
+    padding: 40px 0px;
+    border-bottom: 1px solid #DFDFDF;
+}
+
+#thematic_areas_list .list-item h1 {
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+#thematic_areas_list .list-item p {
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+#thematic_areas_list .link {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #0097AD;
+    text-decoration: none;
+
+}
+
+#thematic_areas_list .link img {
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 560px) {
+
+    #thematic_areas_intro {
+        padding: 24px 16px;
+    }
+
+    #thematic_areas_list {
+        padding: 0px 16px 32px 16px;
+    }
+
+    #thematic_areas_list .list-item {
+        padding: 32px 16px;
+    }
+
+    #thematic_areas_list .link {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+}

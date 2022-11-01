@@ -1,0 +1,258 @@
+/* project showcase section */
+#projects_showcase {
+    min-height: 453px;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#projects_showcase h1 {
+    margin: 0px;
+    padding-bottom: 16px;
+}
+
+#projects_showcase p {
+    max-width: 517px;
+    margin-bottom: 24px;
+    margin-top: 16px;
+}
+
+.horizontal-line {
+    border: none;
+    height: 5px;
+    color: #37A3B4;
+    background-color: #37A3B4;
+    width: 300px;
+    margin:0px;
+}
+
+
+/* event section */
+#event_section {
+    padding:46px 0px 72px 0px;
+}
+
+#event_section .about-event {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#event_section h1,p {
+    text-align: left;
+}
+
+/* coordinators section */
+#coordinators_section {
+    padding: 64px 0px 56px 0px;
+    background: rgba(244, 244, 244, 0.4);
+}
+
+#coordinators_section h1 {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.main-people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+        flex-flow: row wrap;
+}
+
+.main-people .person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 233px;
+    flex-flow: row wrap;
+   
+}
+
+.main-people .person:not(:last-child) {
+    margin-right: 48px;
+}
+
+
+.other-people {
+    margin-top: 56px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.other-people .person:not(:last-child){
+    margin-right: 32px;
+}
+
+.main-people .person h3, .other-people .person h3 {
+    margin-top:16px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.main-people .person p, .other-people .person p {
+    margin: 0px;
+}
+
+/* event descriptions section */
+#event_description {
+    background: #F8F8F8;
+    padding: 80px 0px;
+}
+
+.description-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.list-header {
+    margin-right: 72px;
+    max-width: 206px;
+}
+
+.list-header h1 {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #00448A;
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+.list-header hr {
+    border: none;
+    height: 3px;
+    color: #37A3B4;
+    background-color: #37A3B4;
+    width: 133px;
+    margin:0px;
+}
+
+.list-info {
+    max-width: 648px;
+}
+
+.list-info p {
+    margin: 0px;
+}
+
+.description-list:not(:first-child) {
+    margin-top: 80px;
+}
+
+/* sponsored section */
+#sponsored_section {
+    padding: 40px 0px 48px 0px;
+}
+
+#sponsored_section h3 {
+    text-align: center;
+}
+
+.eu {
+    border-top: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* learning resources section */
+#learning_resources .resource-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: url(./assets/learning_resources.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 207px;
+}
+
+.resource-card h3 {
+    color: white;
+}
+
+@media screen and (max-width: 560px) {
+    /* project showcase section */
+    #projects_showcase {
+        min-height: unset;
+        padding: 85px 16px;
+        background-color: #F9F9F9;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    /*event section */
+    #event_section {
+        padding: 32px 16px;
+    }
+
+    #event_section img{
+        display: none;
+    }
+
+    #event_section .about-event {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #event_section h1 {
+        margin-bottom: 8px;
+    }
+
+    #event_section p {
+        margin: 0px;
+        margin-bottom: 16px;
+        text-align: justify;
+    }
+
+    /*coordinators_section */
+    #coordinators_section {
+        padding: 32px 16px;
+    }
+
+    #coordinators_section h1 {
+        margin-bottom: 32px;
+    }
+
+    #coordinators_section .person {
+        margin: 0px;
+    }
+
+    #coordinators_section .main-people .person:not(:first-child){
+        margin-top: 24px;
+    }
+
+    #coordinators_section .other-people {
+        margin-top: 56px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-flow: row wrap;
+    }
+
+    #coordinators_section .other-people .person{
+        margin-top: 32px;
+    }
+
+    #coordinators_section .other-people .person:first-child, #coordinators_section .other-people .person:nth-child(2){
+        margin-top: 0px;
+    }
+}

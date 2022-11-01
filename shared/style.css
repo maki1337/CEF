@@ -1,0 +1,213 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+#navbar {
+    height: 122px;
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+#footer {
+    background: #FCFCFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 453px;
+}
+
+/* Tipografija */
+.header-xl {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 72px;
+    color: #00448A;
+    text-transform: uppercase;
+}
+
+.header-lg {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: black;
+}
+
+.header-lg-2 {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: black;
+}
+
+.header-md {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+}
+
+.header-md-2 {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color:black;
+}
+
+.header-sm {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color:black;
+}
+
+.header-xs {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.text-lg {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #5E6868;
+}
+
+.text-md {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: black;
+}
+
+.text-xs {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #5E6868;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+/* container */
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* gumbi */
+.btn-primary {
+    background: #00448A;
+    border-radius: 2px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 13px 50px;
+    border: none;
+    outline: none;
+     cursor: pointer;
+}
+
+.btn-primary:active {
+    transform: scale(0.95); 
+}
+
+/* grid sistemi */
+.grid-2-col {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: 50% 50%;
+}
+
+.grid-3-col {
+    display: grid;
+    grid-column-gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap:10px;
+}
+
+.grid-7-col {
+    display: grid;
+    grid-column-gap: 32px;
+    grid-template-columns: repeat(7, 1fr)
+}
+
+.grid-3-col {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+@media screen and (max-width: 560px) {
+    /* Tipografija */
+    .header-lg {
+        font-size: 27px;
+        line-height: 33px;
+    }
+
+    .text-lg {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .header-md {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .text-md {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .header-lg-2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    /* grid sistemi */
+    .grid-2-col {
+        grid-column-gap: 0px;
+        grid-template-columns: 100%;
+    }
+
+    .grid-3-col {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap:10px;
+    }
+
+}

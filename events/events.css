@@ -1,0 +1,110 @@
+#events {
+    padding: 32px 0px 56px 0px;
+}
+
+.events-wrapper {
+    display: flex;
+    justify-content: row;
+    flex-grow: 1;
+    gap: 16px;
+}
+
+.event-card {
+    background: rgba(138, 149, 148, 0.1);
+    border-radius: 8px;
+    padding: 32px 40px 32px 32px;
+}
+
+.event-card h1 {
+    margin-bottom: 12px;
+}
+
+.event-card img {
+    margin-right:10px;
+}
+
+.event-card span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.event-card span:not(:first-child){
+    margin-top: 9px;
+}
+
+.event-card h3 {
+    margin: 0px;
+    margin-top: 4px;
+}
+
+.event-buttons {
+   margin-top: 14px;
+   display: flex;
+   flex-direction: row;
+   gap: 8px;
+}
+
+.btn-gray {
+    outline: none;
+    border: 1px solid #8A9594;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #8A9594;
+    font-family: 'Libre Franklin';
+    padding: 9px 16px;
+}
+
+.btn-apply {
+    outline: none;
+    background: #004B91;
+    border: 1px solid #004B91;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+    font-family: 'Libre Franklin';
+    padding: 9px 16px;
+}
+
+.event-buttons button:active {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.active-event{
+    background: rgba(161, 61, 103, 0.9);
+}
+
+.active-event h1, .active-event h3, .active-event span {
+    color: white !important;
+}
+
+.active-event button {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+.happening-now {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background: transparent;
+    border: none !important;
+}
+
+@media screen and (max-width: 560px) {
+    #events {
+        padding: 16px;
+    }
+}
+
