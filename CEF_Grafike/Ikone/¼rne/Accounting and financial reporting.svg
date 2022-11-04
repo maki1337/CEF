@@ -1,0 +1,20 @@
+<svg width="52" height="58" viewBox="0 0 52 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 8C9 9.10457 8.10457 10 7 10C5.89543 10 5 9.10457 5 8C5 6.89543 5.89543 6 7 6C8.10457 6 9 6.89543 9 8Z" fill="black"/>
+<path d="M15 8C15 9.10457 14.1046 10 13 10C11.8954 10 11 9.10457 11 8C11 6.89543 11.8954 6 13 6C14.1046 6 15 6.89543 15 8Z" fill="black"/>
+<path d="M21 8C21 9.10457 20.1046 10 19 10C17.8954 10 17 9.10457 17 8C17 6.89543 17.8954 6 19 6C20.1046 6 21 6.89543 21 8Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39 15H0V12H39V15Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7 19.5C7 18.6716 7.67157 18 8.5 18H18.5C19.3284 18 20 18.6716 20 19.5C20 20.3284 19.3284 21 18.5 21H8.5C7.67157 21 7 20.3284 7 19.5Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7 25.5C7 24.6716 7.67157 24 8.5 24H18.5C19.3284 24 20 24.6716 20 25.5C20 26.3284 19.3284 27 18.5 27H8.5C7.67157 27 7 26.3284 7 25.5Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7 31.5C7 30.6716 7.67157 30 8.5 30H18.5C19.3284 30 20 30.6716 20 31.5C20 32.3284 19.3284 33 18.5 33H8.5C7.67157 33 7 32.3284 7 31.5Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M47 31H32V25H47V31Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35 38H32V35H35V38Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35 43H32V40H35V43Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M41 43H38V40H41V43Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M47 43H44V40H47V43Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35 48H32V45H35V48Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M41 48H38V45H41V48Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M47 48H44V45H47V48Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M41 38H38V35H41V38Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M47 38H44V35H47V38Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 4C0 2.067 1.56701 0.5 3.5 0.5H35.5C37.433 0.5 39 2.067 39 4V18.5H48C49.933 18.5 51.5 20.067 51.5 22V54C51.5 55.933 49.933 57.5 48 57.5H30.5C28.567 57.5 27 55.933 27 54V40H3.5C1.567 40 0 38.433 0 36.5V4ZM27 37V22C27 20.067 28.567 18.5 30.5 18.5H36V4C36 3.72386 35.7761 3.5 35.5 3.5H3.5C3.22386 3.5 3 3.72386 3 4V36.5C3 36.7761 3.22386 37 3.5 37H27ZM30.5 21.5C30.2239 21.5 30 21.7239 30 22V54C30 54.2761 30.2239 54.5 30.5 54.5H48C48.2761 54.5 48.5 54.2761 48.5 54V22C48.5 21.7239 48.2761 21.5 48 21.5H30.5Z" fill="black"/>
+</svg>

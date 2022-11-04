@@ -170,6 +170,9 @@
 }
 
 /* learning resources section */
+#learning_resources  {
+    padding: 48px 0px;
+}
 #learning_resources .resource-card {
     display: flex;
     justify-content: center;
@@ -196,6 +199,19 @@
         align-items: center;
     }
 
+    #projects_showcase h1 {
+        font-family: 'Libre Franklin';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 72px;
+        padding:0px;
+    }
+
+    #projects_showcase p{
+        margin-top: 8px;
+    }
+
     /*event section */
     #event_section {
         padding: 32px 16px;
@@ -213,7 +229,7 @@
     }
 
     #event_section h1 {
-        margin-bottom: 8px;
+        margin: 0px 0px 8px 0px;
     }
 
     #event_section p {
