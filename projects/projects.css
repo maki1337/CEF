@@ -8,6 +8,10 @@
   position: relative;
 }
 
+#projects_showcase .container {
+  z-index: 1;
+}
+
 #projects_showcase img {
   position: absolute;
   top: 50%;
@@ -131,6 +135,11 @@ p {
   transform: translateY(-50%);
 }
 
+#event_description .list-header,
+#event_description .list-info {
+  z-index: 1;
+}
+
 #event_description .description-list {
   display: flex;
   justify-content: center;
@@ -199,28 +208,46 @@ p {
   align-items: center;
 }
 
-/* learning resources section */
-#learning_resources {
+/* #other_resources */
+#other_resources {
   padding-bottom: 48px;
 }
 
-#learning_resources h1 {
-  margin-top: 0px;
+#other_resources .resource {
+  position: relative;
 }
 
-#learning_resources .resource-card {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  min-height: 207px;
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-#learning_resources a {
-  text-decoration: none;
-}
-
-#learning_resources .resource-card h3 {
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(249, 249, 249, 0) 0%,
+    rgba(136, 136, 136, 0.451653) 32.34%,
+    rgba(54, 54, 54, 0.783529) 60.65%,
+    #000000 100%
+  );
+  width: 100%;
   color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 18px;
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 /* learning events*/
@@ -456,6 +483,16 @@ p {
 
   #event_description .list-info p {
     text-align: center;
+  }
+
+  #event_description img {
+    display: none;
+  }
+
+  /*  #other_resources*/
+
+  #other_resources {
+    padding: 32px 16px;
   }
 
   /* event descriptions */
