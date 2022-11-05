@@ -1,72 +1,116 @@
+/*#thematic_areas_intro*/
 #thematic_areas_intro {
-    background: #FCFCFC;
-    padding: 40px 0px;
-    text-align: center;
+  background: #fcfcfc;
+  padding: 40px 0px;
+  text-align: center;
 }
 
 #thematic_areas_intro h1 {
-    margin: 0px;
-    margin-bottom: 8px;
+  margin: 0px;
+  margin-bottom: 8px;
 }
 
 #thematic_areas_intro p {
-    max-width: 900px;
-    margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
+/*#areas_slider*/
+#areas_slider {
+  padding: 40px 0px 88px 0px;
+}
+
+#areas_slider .area-card {
+  padding: 72px 33px 53px 33px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #004b91;
+  border-radius: 20px;
+}
+
+#areas_slider img {
+  margin-bottom: 22px;
+}
+
+#areas_slider h1 {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0px 0px 8px 0px;
+}
+
+#areas_slider p {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ededed;
+  margin: 0px;
+}
+
+/*#thematic_areas_list*/
 #thematic_areas_list {
-    padding-top: 33px;
-    padding-bottom: 33px;
+  padding-bottom: 33px;
 }
 
 #thematic_areas_list .list-item {
-    padding: 40px 0px;
-    border-bottom: 1px solid #DFDFDF;
+  padding: 40px 0px;
+  border-bottom: 1px solid #dfdfdf;
 }
 
 #thematic_areas_list .list-item h1 {
-    margin: 0px;
-    margin-bottom: 8px;
+  margin: 0px;
+  margin-bottom: 8px;
 }
 
 #thematic_areas_list .list-item p {
-    margin: 0px;
-    margin-bottom: 15px;
+  margin: 0px;
+  margin-bottom: 15px;
 }
 
 #thematic_areas_list .link {
-    font-family: 'Libre Franklin';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
-    color: #0097AD;
-    text-decoration: none;
-
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0097ad;
+  text-decoration: none;
 }
 
 #thematic_areas_list .link img {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 @media screen and (max-width: 560px) {
+  #thematic_areas_intro,
+  #areas_slider {
+    padding: 24px 16px;
+  }
 
-    #thematic_areas_intro {
-        padding: 24px 16px;
-    }
+  #areas_slider .grid-4-col {
+    grid-row-gap: 16px;
+  }
 
-    #thematic_areas_list {
-        padding: 0px 16px 32px 16px;
-    }
+  #thematic_areas_list {
+    padding: 0px 16px 32px 16px;
+  }
 
-    #thematic_areas_list .list-item {
-        padding: 32px 16px;
-    }
+  #thematic_areas_list .list-item {
+    padding: 32px 16px;
+  }
 
-    #thematic_areas_list .link {
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
-    }
-
+  #thematic_areas_list .link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

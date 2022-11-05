@@ -1,0 +1,20 @@
+<svg width="52" height="58" viewBox="0 0 52 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="7" cy="8" r="2" fill="white"/>
+<circle cx="13" cy="8" r="2" fill="white"/>
+<circle cx="19" cy="8" r="2" fill="white"/>
+<line y1="13.5" x2="39" y2="13.5" stroke="white" stroke-width="3"/>
+<line x1="8.5" y1="19.5" x2="18.5" y2="19.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<line x1="8.5" y1="25.5" x2="18.5" y2="25.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<line x1="8.5" y1="31.5" x2="18.5" y2="31.5" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<line x1="32" y1="28" x2="47" y2="28" stroke="white" stroke-width="6"/>
+<line x1="32" y1="36.5" x2="35" y2="36.5" stroke="white" stroke-width="3"/>
+<line x1="32" y1="41.5" x2="35" y2="41.5" stroke="white" stroke-width="3"/>
+<line x1="38" y1="41.5" x2="41" y2="41.5" stroke="white" stroke-width="3"/>
+<line x1="44" y1="41.5" x2="47" y2="41.5" stroke="white" stroke-width="3"/>
+<line x1="32" y1="46.5" x2="35" y2="46.5" stroke="white" stroke-width="3"/>
+<line x1="38" y1="46.5" x2="41" y2="46.5" stroke="white" stroke-width="3"/>
+<line x1="44" y1="46.5" x2="47" y2="46.5" stroke="white" stroke-width="3"/>
+<line x1="38" y1="36.5" x2="41" y2="36.5" stroke="white" stroke-width="3"/>
+<line x1="44" y1="36.5" x2="47" y2="36.5" stroke="white" stroke-width="3"/>
+<path d="M37.5 19V4C37.5 2.89543 36.6046 2 35.5 2H3.5C2.39543 2 1.5 2.89543 1.5 4V36.5C1.5 37.6046 2.39543 38.5 3.5 38.5H28.5M30.5 56H48C49.1046 56 50 55.1046 50 54V22C50 20.8954 49.1046 20 48 20H30.5C29.3954 20 28.5 20.8954 28.5 22V54C28.5 55.1046 29.3954 56 30.5 56Z" stroke="white" stroke-width="3"/>
+</svg>
