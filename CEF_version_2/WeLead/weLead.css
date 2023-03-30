@@ -1,10 +1,12 @@
 #we_lead_showcase {
   min-height: 573px;
+  max-height: 573px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   background: #f9f9f9;
   position: relative;
+  overflow: hidden;
 }
 
 #we_lead_showcase .container {
@@ -23,6 +25,14 @@
   top: 50%;
   right: 0%;
   transform: translateY(-50%);
+}
+
+#we_lead_showcase .mobile-background {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+  max-height: 573px;
 }
 
 #we_lead_showcase .showcase-img {
@@ -51,6 +61,10 @@
   background-color: #c9c473;
   width: 300px;
   margin: 0px;
+}
+
+.mobile-background {
+  display: none;
 }
 
 /* event section */
@@ -326,7 +340,7 @@
   margin-top: 80px;
 }
 
-.block-wrapper {
+#event_description .block-wrapper {
   display: block;
   margin: 0 auto;
 }
@@ -341,12 +355,12 @@
   padding-bottom: 8px;
 }
 
-.accordion {
+#event_description .accordion {
   display: flex;
   flex-direction: column;
 }
 
-.accordion-button {
+#event_description .accordion-button {
   background-color: transparent;
   color: black;
   cursor: pointer;
@@ -367,29 +381,29 @@
   line-height: 24px;
 }
 
-.accordion-header {
+#event_description .accordion-header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 
-.accordion-button img {
+#event_description .accordion-button img {
   margin-right: 24px;
 }
 
-.accordion-button .bold {
+#event_description .accordion-button .bold {
   font-weight: 700;
 }
 
-.accordion-content {
+#event_description .accordion-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   padding: 0 18px;
 }
 
-.accordion-content {
+#event_description .accordion-content {
   font-family: "Libre Franklin";
   font-style: normal;
   font-weight: 700;
@@ -398,17 +412,17 @@
   padding-left: 4rem;
 }
 
-.accordion-icon {
-  background-image: url("../CEF_Grafike/arrow-down.svg"); /* Replace with the path to your custom icon */
+#event_description .accordion-icon {
+  background-image: url("../CEF_Grafike/arrow-down.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
   display: inline-block;
-  width: 16px; /* Set the width of your icon */
-  height: 16px; /* Set the height of your icon */
+  width: 16px;
+  height: 16px;
 }
 
-.accordion-icon.open {
+#event_description .accordion-icon.open {
   background-image: url("../CEF_Grafike/arrow-up.svg");
 }
 
@@ -481,6 +495,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    min-height: 469px;
   }
 
   #we_lead_showcase h1 {
@@ -494,6 +509,18 @@
 
   #we_lead_showcase p {
     margin-top: 8px;
+  }
+
+  #we_lead_showcase .showcase-img {
+    display: none;
+  }
+
+  #we_lead_showcase .mobile-background {
+    display: block;
+  }
+
+  #we_lead_showcase .background-showcase {
+    display: none;
   }
 
   /*event section */
