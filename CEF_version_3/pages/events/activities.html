@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./events.css" />
+    <link rel="stylesheet" href="./activities.css" />
     <link rel="stylesheet" href="../../assets/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,8 +20,68 @@
       <h1 class="header-lg">Meni</h1>
     </section>
 
+    <section id="filter">
+      <div class="filter-showcase">
+        <h1>What are you looking for?</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae
+          metus tempor, cursus sapien ac, aliquam mauris.
+        </p>
+      </div>
+
+      <div class="filter-wrapper">
+        <form action="" id="filter-desktop">
+          <div id="filter-inputs">
+            <div class="select-wrapper">
+              <select>
+                <option value="date">Date</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+              </select>
+            </div>
+
+            <div class="select-wrapper">
+              <select>
+                <option value="date">Topic</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+              </select>
+            </div>
+
+            <div class="select-wrapper">
+              <select>
+                <option value="date">Format</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+              </select>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="application-checkbox" />
+              <label for="application-checkbox">Open for applications</label>
+            </div>
+
+            <div class="checkbox-wrapper">
+              <input type="checkbox" id="application-checkbox" />
+              <label for="application-checkbox">Hide long-term acitvites</label>
+            </div>
+
+            <button>Apply filters</button>
+          </div>
+        </form>
+
+        <div id="mobile-filter">
+          <button id="apply-filter-btn">
+            <img src="../../assets/icons/filter-icon.svg" alt="filter" />
+            <h3>Show filters</h1>
+          </button>
+        </div>
+      </div>
+    </section>
+
     <section id="events">
       <div class="container">
+        <h1 class="header-lg-2">All activites</h1>
         <div class="grid-3-col">
           <div class="active-event event-card">
             <h1 class="header-md">

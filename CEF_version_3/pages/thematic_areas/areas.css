@@ -1,0 +1,41 @@
+#post_header {
+  padding-top: 40px;
+  padding-bottom: 32px;
+}
+
+#post-meta {
+  padding-top: 32px;
+  padding-bottom: 21px;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.meta-items {
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+}
+
+.meta-item {
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.meta-item span {
+  color: #777777;
+  font-family: "Libre Franklin";
+  font-size: 12px;
+  padding-top: 2px;
+}
+
+#post-meta .meta-items:nth-child(2) {
+  margin-top: 16px;
+}
+
+#post-content h1,
+p {
+  font-family: "Libre Franklin";
+  color: #000000;
+}

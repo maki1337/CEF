@@ -1,3 +1,9 @@
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
 #navbar {
   height: 122px;
   width: 100%;
@@ -79,6 +85,11 @@
   color: black;
 }
 
+.text-xl {
+  font-size: 36px;
+  font-family: "Libre Franklin";
+}
+
 .black {
   color: black;
 }
@@ -93,6 +104,14 @@
 
 .font-semibold {
   font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
 }
 
 /* grid sistemi */

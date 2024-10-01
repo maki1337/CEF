@@ -1,6 +1,6 @@
 /* trenutni eventi style */
 #events {
-  padding: 32px 0px 56px 0px;
+  padding: 56px 0px 56px 0px;
   font-family: "Libre Franklin";
 }
 
@@ -200,6 +200,122 @@
   padding: 9px 16px;
 }
 
+.filter-showcase {
+  background: #004b91;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: white;
+  text-align: center;
+}
+
+.filter-showcase h1 {
+  font-family: "Libre Franklin";
+  font-size: 36px;
+  margin: 0px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.filter-showcase p {
+  font-family: "Libre Franklin";
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0px;
+  font-weight: 400;
+  max-width: 648px;
+  margin: 0 auto;
+}
+
+.filter-wrapper {
+  background: #f4f4f4;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+#filter-inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 16px;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+}
+
+select {
+  width: 100%;
+  padding: 11px 24px 11px 24px;
+  font-size: 14px;
+  font-family: "Libre Franklin";
+  color: #353941;
+  background-color: transparent;
+  border: 1px solid #353941;
+  border-radius: 20px;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 55%;
+  right: 24px;
+  width: 12px;
+  height: 12px;
+  background-image: url("../../assets/icons/arrow-down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #353941;
+  border-radius: 3px;
+  margin-right: 8px;
+  cursor: pointer;
+  background: transparent;
+}
+
+label {
+  font-size: 14px;
+  color: #353941;
+  cursor: pointer;
+  font-family: "Libre Franklin";
+}
+
+#filter-inputs button {
+  background: #004b91;
+  padding: 12px 32px 11px 32px;
+  font-size: 14px;
+  font-family: "Libre Franklin";
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+}
+
+#mobile-filter {
+  display: none;
+}
+
 @media screen and (max-width: 560px) {
   #events,
   #past-events {
@@ -208,5 +324,29 @@
 
   #events button {
     margin-top: 32px;
+  }
+
+  #mobile-filter {
+    display: block;
+  }
+
+  #apply-filter-btn {
+    display: flex;
+    flex-direction: row;
+    column-gap: 13px;
+    outline: none;
+    border: none;
+    align-items: center;
+    background: transparent;
+  }
+
+  #mobile-filter h3 {
+    font-size: 17px;
+    color: #353941;
+    font-family: "Libre Franklin";
+  }
+
+  #filter-desktop {
+    display: none;
   }
 }
