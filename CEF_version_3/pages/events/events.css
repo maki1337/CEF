@@ -1,0 +1,212 @@
+/* trenutni eventi style */
+#events {
+  padding: 32px 0px 56px 0px;
+  font-family: "Libre Franklin";
+}
+
+#events .event-card {
+  background: rgba(138, 149, 148, 0.1);
+  border-radius: 8px;
+  padding: 32px 40px 32px 32px;
+}
+
+#events .event-card h1 {
+  margin-bottom: 12px;
+}
+
+#events .event-card img {
+  margin-right: 10px;
+}
+
+#events .event-card span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#events .event-card span:not(:first-child) {
+  margin-top: 9px;
+}
+
+#events .event-card h3 {
+  margin: 0px;
+  margin-top: 4px;
+}
+
+#events .event-buttons {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+#events .btn-gray {
+  outline: none;
+  border: 1px solid #8a9594;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #8a9594;
+  font-family: "Libre Franklin";
+  padding: 9px 16px;
+}
+
+#events .btn-gray a {
+  color: #8a9594 !important;
+}
+
+#events .event-buttons a {
+  text-decoration: none;
+}
+
+#events .btn-apply {
+  outline: none;
+  background: #004b91;
+  border: 1px solid #004b91;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "Libre Franklin";
+  padding: 9px 16px;
+}
+
+#events .btn-apply a {
+  color: white;
+}
+
+#events .event-buttons button:active {
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+#events .active-event {
+  background: rgba(161, 61, 103, 0.9);
+}
+
+#events .active-event h1,
+#events .active-event h3,
+#events .active-event span,
+#events .active-event a {
+  color: white !important;
+  text-decoration: none;
+}
+
+#events .active-event button {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+}
+
+#events .happening-now {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  background: transparent;
+  border: none !important;
+}
+
+#events .load-more {
+  margin: 0 auto;
+  display: block;
+  margin-top: 40px;
+  padding: 22px 48px;
+  background-color: #004b91;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#events .load-more:active {
+  transform: scale(0.95);
+}
+
+/* predhodnji eventi style */
+#past-events .event-card {
+  background: #797979;
+  border-radius: 8px;
+  padding: 32px 40px 32px 32px;
+}
+
+#past-events .header-lg-2 {
+  margin: 0px 0px 16px 0px;
+}
+
+#past-events .event-card h1,
+#past-events .event-card h3,
+#past-events .event-card span,
+#past-events .event-card a {
+  color: white !important;
+  text-decoration: none;
+}
+
+#past-events .event-card h1 {
+  margin-bottom: 12px;
+}
+
+#past-events .event-card img {
+  margin-right: 10px;
+}
+
+#past-events .event-card span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#past-events .event-card span:not(:first-child) {
+  margin-top: 9px;
+}
+
+#past-events .event-card h3 {
+  margin: 0px;
+  margin-top: 4px;
+}
+
+#past-events .event-buttons {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+#past-events .event-buttons {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+#past-events .btn-gray {
+  outline: none;
+  border: 1px solid white;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: white;
+  font-family: "Libre Franklin";
+  background: transparent;
+  padding: 9px 16px;
+}
+
+@media screen and (max-width: 560px) {
+  #events,
+  #past-events {
+    padding: 16px;
+  }
+
+  #events button {
+    margin-top: 32px;
+  }
+}

@@ -1,0 +1,267 @@
+.profile-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar-wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+  align-items: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #bfbfbf;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+#avatar-edit {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #004b91;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  right: 0px;
+  bottom: 0px;
+}
+
+.avatar-wrapper h1 {
+  margin: 0px;
+}
+
+.avatar-wrapper p {
+  margin: 0px;
+}
+
+#profile_details_section {
+  padding-top: 40px;
+}
+
+#profile_details_section h1,
+p {
+  margin: 0px;
+}
+
+.profile-section {
+  padding: 32px 0px 54px 0px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+#certificates {
+  display: flex;
+  flex-direction: row;
+  column-gap: 194px;
+  align-items: flex-start;
+}
+
+#certificate_grid {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 206px);
+  gap: 15px;
+}
+
+.certificate-card {
+  background-color: #fdfdfd;
+  border: 1px solid #dfdfdf;
+  padding: 24px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  max-width: 206px;
+}
+
+.certificate-card img {
+  margin-bottom: 12.2px;
+  max-width: 100%;
+}
+
+.certificate-card-button-blue {
+  border-radius: 16px;
+  outline: none;
+  border: none;
+  background: #004b91;
+  color: white;
+  font-size: 10px;
+  font-family: "Libre Franklin";
+  padding: 6px 10px;
+  margin-top: 10px;
+}
+
+.certificate-card-button-red {
+  border-radius: 16px;
+  outline: none;
+  border: none;
+  background: #c3261b;
+  color: white;
+  font-size: 10px;
+  font-family: "Libre Franklin";
+  padding: 6px 10px;
+  margin-top: 10px;
+}
+
+.certificate-card-button-orange {
+  border-radius: 16px;
+  outline: none;
+  border: none;
+  background: #c98056;
+  color: white;
+  font-size: 10px;
+  font-family: "Libre Franklin";
+  padding: 6px 10px;
+  margin-top: 10px;
+}
+
+#groups {
+  display: flex;
+  flex-direction: row;
+  column-gap: 194px;
+  align-items: flex-start;
+}
+
+#groups_cards {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 206px);
+  gap: 15px;
+}
+
+.group-card {
+  background: rgba(138, 149, 148, 0.1);
+  padding: 24px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 206px;
+}
+
+.group-card a {
+  margin-top: 4px;
+}
+
+.group-avatar {
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+  background: #004b91;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  font-family: "Libre Franklin";
+}
+
+#current-activities {
+  display: flex;
+  flex-direction: row;
+  column-gap: 194px;
+  align-items: flex-start;
+}
+
+#current-activities h1,
+p {
+  margin: 0px;
+}
+
+#activity_grid {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(1, 427px);
+  gap: 15px;
+}
+
+.acitvity-card {
+  background: rgba(138, 149, 148, 0.1);
+  padding: 32px 40px 32px 32px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: start;
+  max-width: 427px;
+}
+
+.acitvity-card h1 {
+  margin-bottom: 13px !important;
+}
+
+.card-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Libre Franklin";
+  width: 100%;
+  column-gap: 10px;
+  margin-bottom: 9px;
+}
+
+.acitvity-button {
+  outline: none;
+  border: 1px solid #8a9594;
+  padding: 9px 16px;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 30px;
+  margin-top: 12px;
+}
+
+#past-activities {
+  display: flex;
+  flex-direction: row;
+  column-gap: 194px;
+  align-items: flex-start;
+}
+
+#past-activities h1 {
+  margin-bottom: 13px !important;
+}
+
+.past-acitvity-card {
+  background: #797979;
+  padding: 32px 40px 32px 32px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: start;
+  max-width: 427px;
+  color: white;
+}
+
+#past_activity_grid {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 427px);
+  gap: 15px;
+}
+
+.acitvity-button-white {
+  outline: none;
+  border: 1px solid white;
+  padding: 9px 16px;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 30px;
+  margin-top: 12px;
+  background: transparent;
+  color: white;
+}
