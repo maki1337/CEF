@@ -179,6 +179,10 @@ button:active {
     line-height: 22px;
   }
 
+  .text-xl {
+    font-size: 27px;
+  }
+
   /* grid sistemi */
   .grid-2-col {
     grid-column-gap: 0px;

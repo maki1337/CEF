@@ -34,7 +34,7 @@
 .meta-items {
   display: flex;
   flex-direction: row;
-  column-gap: 24px;
+  column-gap: 18px;
 }
 
 .meta-item {
@@ -179,6 +179,7 @@ p {
   font-family: "Libre Franklin";
   font-weight: bold;
   margin-bottom: 8px;
+  margin: 0 auto;
 }
 
 .course-link h1 {
@@ -254,13 +255,73 @@ p {
 }
 
 @media (max-width: 1000px) {
-  .container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
   .first-column,
   .second-column {
     max-width: 100%;
+  }
+
+  #post {
+    padding: 40px 16px 50px 16px;
+  }
+
+  #post_header {
+    padding: 0px 0px 24px 0px;
+  }
+
+  #no-fee {
+    display: none;
+  }
+
+  .meta-items {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .meta-items .meta-item:nth-child(2) {
+    width: 100%;
+    width: 220px;
+  }
+
+  .meta-items .meta-item:nth-child(1) span {
+    white-space: nowrap;
+  }
+
+  #post-content h1 {
+    font-size: 24px;
+    line-height: auto;
+  }
+
+  #post-content h1 {
+    margin-top: 32px !important;
+    margin-bottom: 16px !important;
+  }
+
+  #post-content h1:first-child {
+    margin-top: 24px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .post-content-wrapper {
+    padding-bottom: 32px;
+  }
+
+  .eu-flag {
+    padding: 24px 0px 32px 0px;
+  }
+
+  #post {
+    gap: 0px;
+  }
+
+  .jobs {
+    margin-top: 0px;
+  }
+
+  .agenda-header {
+    font-size: 24px !important;
+  }
+
+  .link-header {
+    font-size: 24px !important;
   }
 }
