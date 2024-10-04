@@ -73,7 +73,7 @@
         <div id="mobile-filter">
           <button id="apply-filter-btn">
             <img src="../../assets/icons/filter-icon.svg" alt="filter" />
-            <h3>Show filters</h1>
+            <h3>Show filters</h3>
           </button>
         </div>
       </div>
@@ -363,8 +363,64 @@
       </div>
     </section>
 
+    <div id="filter-overlay" class="hidden">
+      <div class="overlay-content">
+        <div class="overlay-header">
+          <h1>Filters</h1>
+          <button id="close-overlay-btn">
+            <img src="../../assets/icons/close-icon.svg" alt="close" />
+          </button>
+        </div>
+
+        <div class="overlay-body">
+          <form action="" id="filter-mobile">
+            <div id="filter-inputs">
+              <div class="select-wrapper">
+                <select>
+                  <option value="date">Date</option>
+                  <option value="option1">Option 1</option>
+                  <option value="option2">Option 2</option>
+                </select>
+              </div>
+
+              <div class="select-wrapper">
+                <select>
+                  <option value="date">Topic</option>
+                  <option value="option1">Option 1</option>
+                  <option value="option2">Option 2</option>
+                </select>
+              </div>
+
+              <div class="select-wrapper">
+                <select>
+                  <option value="date">Format</option>
+                  <option value="option1">Option 1</option>
+                  <option value="option2">Option 2</option>
+                </select>
+              </div>
+
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="application-checkbox" />
+                <label for="application-checkbox">Open for applications</label>
+              </div>
+
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="application-checkbox" />
+                <label for="application-checkbox"
+                  >Hide long-term acitvites</label
+                >
+              </div>
+            </div>
+            <button id="save-filters-btn">Apply filters</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <section id="footer">
       <h1 class="header-lg">Noga</h1>
     </section>
+
+    <script src="./popups.js"></script>
   </body>
 </html>
