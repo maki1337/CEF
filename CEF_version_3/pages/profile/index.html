@@ -20,211 +20,487 @@
 
     <main>
       <div class="container">
-        <!-- profile header section -->
-        <section id="profile_header_section">
-          <div class="profile-header-wrapper">
-            <div class="avatar-wrapper">
-              <div class="avatar">
-                <img
-                  src="../../assets/images/avatar-mock.png"
-                  alt="avatar image"
-                />
+        <div id="profile-page">
+          <!-- profile header section -->
+          <section id="profile_header_section">
+            <div class="profile-header-wrapper">
+              <div class="avatar-wrapper">
+                <div class="avatar">
+                  <img
+                    src="../../assets/images/avatar-mock.png"
+                    alt="avatar image"
+                  />
 
-                <div id="avatar-edit">
-                  <img src="../../assets/icons/edit-icon.svg" alt="edit" />
+                  <div id="avatar-edit">
+                    <img src="../../assets/icons/edit-icon.svg" alt="edit" />
+                  </div>
+                </div>
+                <div>
+                  <h1 class="text-lg black font-bold">Janez Novak</h1>
+                  <p class="text-sm gray">janez.novak@cef-see.org</p>
                 </div>
               </div>
+
+              <button
+                class="button-primary text-sm font-semibold"
+                id="edit-profile-btn"
+              >
+                Edit profile
+              </button>
+            </div>
+          </section>
+
+          <!-- profile details  section -->
+          <section id="profile_details_section">
+            <div id="account_details" class="profile-section">
+              <h1 class="text-lg font-bold">Account details</h1>
+              <p class="text-sm gray">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+
+            <!-- personal data -->
+            <div id="personal_data" class="profile-section">
               <div>
-                <h1 class="text-lg black font-bold">Janez Novak</h1>
-                <p class="text-sm gray">janez.novak@cef-see.org</p>
-              </div>
-            </div>
-
-            <button class="button-primary text-sm font-semibold">
-              Edit profile
-            </button>
-          </div>
-        </section>
-
-        <!-- profile details  section -->
-        <section id="profile_details_section">
-          <div id="account_details" class="profile-section">
-            <h1 class="text-lg font-bold">Account details</h1>
-            <p class="text-sm gray">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-          </div>
-
-          <!-- personal data -->
-          <div id="personal_data" class="profile-section">
-            <div>
-              <h1 class="text-base font-bold">Personal data</h1>
-              <p class="text-sm gray">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-
-            <div></div>
-          </div>
-
-          <!-- certificates -->
-          <div id="certificates" class="profile-section">
-            <div>
-              <h1 class="text-base font-bold">Certificates</h1>
-              <p class="text-sm gray">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-
-            <div id="certificate_grid">
-              <div class="certificate-card">
-                <img src="../../assets/images/cef_logo.png" alt="cef logo" />
-                <h1 class="text-base font-bold">
+                <h1 class="text-base font-bold">Personal data</h1>
+                <p class="text-sm gray">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h1>
-                <button class="certificate-card-button-blue">
-                  Name of status
-                </button>
+                </p>
               </div>
 
-              <div class="certificate-card">
-                <img src="../../assets/images/cef_logo.png" alt="cef logo" />
-                <h1 class="text-base font-bold">
+              <div class="profile-inputs">
+                <div class="profile-input-group">
+                  <div>
+                    <label for="first_name" class="text-sm gray required"
+                      >First name</label
+                    >
+                    <h3>Janez</h3>
+                    <input
+                      type="text"
+                      id="first_name"
+                      name="first_name"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <label for="birth_date" class="text-sm gray required"
+                      >Date of birth</label
+                    >
+                    <h3>01.01.1990</h3>
+                    <input
+                      type="text"
+                      id="birth_date"
+                      name="birth_date"
+                      class="hidden"
+                    />
+                  </div>
+                </div>
+
+                <div class="profile-input-group">
+                  <div>
+                    <label for="last_name" class="text-sm gray required"
+                      >Last name</label
+                    >
+                    <h3>Novak</h3>
+                    <input
+                      type="text"
+                      id="last_name"
+                      name="last_name"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <label for="gender" class="text-sm gray required"
+                      >Gender</label
+                    >
+                    <h3>Male</h3>
+                    <div class="select-parent hidden">
+                      <div class="select-wrapper">
+                        <select id="gender" name="gender">
+                          <option value="date">Gender</option>
+                          <option value="option1">Option 1</option>
+                          <option value="option2">Option 2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- current job information -->
+            <div id="job_information" class="profile-section">
+              <div>
+                <h1 class="text-base font-bold">Current job information</h1>
+                <p class="text-sm gray">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h1>
-                <button class="certificate-card-button-red">
-                  Name of status
-                </button>
+                </p>
               </div>
 
-              <div class="certificate-card">
-                <img src="../../assets/images/cef_logo.png" alt="cef logo" />
-                <h1 class="text-base font-bold">
+              <div class="profile-inputs">
+                <div class="profile-input-group">
+                  <div>
+                    <label for="job_title" class="text-sm gray required"
+                      >Job title</label
+                    >
+                    <h3>Title</h3>
+                    <input
+                      type="text"
+                      id="job_title"
+                      name="job_title"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <label for="organization_name" class="text-sm gray required"
+                      >Organizational unit name</label
+                    >
+                    <h3>Official name</h3>
+                    <input
+                      type="text"
+                      id="organization_name"
+                      name="organization_name"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <label for="work_phone" class="text-sm gray required"
+                      >Work phone</label
+                    >
+                    <h3>00 000 00 00</h3>
+                    <input
+                      type="tel"
+                      id="work_phone"
+                      name="work_phone"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <label for="work_email" class="text-sm gray required"
+                      >Work email</label
+                    >
+                    <h3>mail@cef-see.org</h3>
+                    <input
+                      type="email"
+                      id="work_email"
+                      name="work_email"
+                      class="hidden"
+                    />
+                  </div>
+                </div>
+
+                <div class="profile-input-group">
+                  <div>
+                    <label for="insitution_name" class="text-sm gray required"
+                      >Official name of insitution in English</label
+                    >
+                    <h3>Official name</h3>
+                    <input
+                      type="text"
+                      id="insitution_name"
+                      name="insitution_name"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <label for="country" class="text-sm gray required"
+                      >Country</label
+                    >
+                    <h3>Slovenia</h3>
+                    <div class="select-parent hidden">
+                      <div class="select-wrapper">
+                        <select id="country" name="country">
+                          <option value="date">Country</option>
+                          <option value="option1">Option 1</option>
+                          <option value="option2">Option 2</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="mobile_phone" class="text-sm gray required"
+                      >Mobile phone</label
+                    >
+                    <h3>000 000 000</h3>
+                    <input
+                      type="tel"
+                      id="mobile_phone"
+                      name="mobile_phone"
+                      class="hidden"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- password information -->
+            <div id="password_information" class="profile-section">
+              <div>
+                <h1 class="text-base font-bold">Password</h1>
+                <p class="text-sm gray">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h1>
-                <button class="certificate-card-button-orange">
-                  Name of status
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- current activites -->
-          <div id="groups" class="profile-section">
-            <div>
-              <h1 class="text-base font-bold">Groups</h1>
-              <p class="text-sm gray">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-
-            <div id="groups_cards">
-              <div class="group-card">
-                <div class="group-avatar">G</div>
-                <h1 class="text-base font-bold">Group name one</h1>
-                <a href="" class="gray text-sm">View details</a>
+                </p>
               </div>
 
-              <div class="group-card">
-                <div class="group-avatar">G</div>
-                <h1 class="text-base font-bold">Group name one</h1>
-                <a href="" class="gray text-sm">View details</a>
-              </div>
+              <button id="change-password-btn">Change password</button>
 
-              <div class="group-card">
-                <div class="group-avatar">G</div>
-                <h1 class="text-base font-bold">Group name one</h1>
-                <a href="" class="gray text-sm">View details</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- current activites -->
-          <div id="current-activities" class="profile-section">
-            <div>
-              <h1 class="text-base font-bold">Current activities</h1>
-              <p class="text-sm gray">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-
-            <div id="activity_grid">
-              <div class="acitvity-card">
-                <h1 class="text-base font-bold">
-                  Programming Structural Reforms for the ERP 2023-2025: Albania
-                  (By Invitation)
-                </h1>
-                <div class="card-item">
-                  <img
-                    src="../../assets/icons/calendar-icon.svg"
-                    alt="koledar"
-                  />
-                  <span>Oct 18 – 20, 2022</span>
+              <div class="profile-inputs">
+                <div class="profile-input-group hidden">
+                  <div>
+                    <label for="current_passwrd" class="text-sm gray required"
+                      >Current password</label
+                    >
+                    <input
+                      type="password"
+                      id="current_passwrd"
+                      name="current_passwrd"
+                    />
+                  </div>
+                  <div>
+                    <label for="new_password" class="text-sm gray required"
+                      >Organizational unit name</label
+                    >
+                    <input
+                      type="password"
+                      id="new_password"
+                      name="new_password"
+                    />
+                  </div>
+                  <div>
+                    <label for="confirm_password" class="text-sm gray required"
+                      >Confirm password</label
+                    >
+                    <input
+                      type="password"
+                      id="confirm_password"
+                      name="confirm_password"
+                    />
+                  </div>
                 </div>
-                <div class="card-item">
-                  <img src="../../assets/icons/map-icon.svg" alt="map" />
-                  <span style="margin-left: 4px">Ljubljana, Slovenia</span>
-                </div>
-                <button class="acitvity-button">Workshop</button>
               </div>
             </div>
-          </div>
 
-          <!-- Past activites -->
-          <div id="past-activities" class="profile-section">
-            <div>
-              <h1 class="text-base font-bold">Past activities</h1>
-              <p class="text-sm gray">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-
-            <div id="past_activity_grid">
-              <div class="past-acitvity-card">
-                <h1 class="text-base font-bold">
-                  Programming Structural Reforms for the ERP 2023-2025: Albania
-                  (By Invitation)
-                </h1>
-                <div class="card-item">
-                  <img
-                    src="../../assets/icons/calendar-white-icon.svg"
-                    alt="koledar"
-                  />
-                  <span>Oct 18 – 20, 2022</span>
-                </div>
-                <div class="card-item">
-                  <img src="../../assets/icons/map-white-icon.svg" alt="map" />
-                  <span style="margin-left: 4px">Ljubljana, Slovenia</span>
-                </div>
-                <button class="acitvity-button-white">Workshop</button>
+            <!-- certificates -->
+            <div id="certificates" class="profile-section">
+              <div class="activities-text">
+                <h1 class="text-base font-bold">Certificates</h1>
+                <p class="text-sm gray">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
               </div>
 
-              <div class="past-acitvity-card">
-                <h1 class="text-base font-bold">
-                  Programming Structural Reforms for the ERP 2023-2025: Albania
-                  (By Invitation)
-                </h1>
-                <div class="card-item">
-                  <img
-                    src="../../assets/icons/calendar-white-icon.svg"
-                    alt="koledar"
-                  />
-                  <span>Oct 18 – 20, 2022</span>
+              <div class="overflow-layout">
+                <div class="overflow-card-container">
+                  <div class="certificate-card">
+                    <img
+                      src="../../assets/images/cef_logo.png"
+                      alt="cef logo"
+                    />
+                    <h1 class="text-base font-bold">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </h1>
+                    <button class="certificate-card-button-blue">
+                      Name of status
+                    </button>
+                  </div>
+
+                  <div class="certificate-card">
+                    <img
+                      src="../../assets/images/cef_logo.png"
+                      alt="cef logo"
+                    />
+                    <h1 class="text-base font-bold">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </h1>
+                    <button class="certificate-card-button-red">
+                      Name of status
+                    </button>
+                  </div>
+
+                  <div class="certificate-card">
+                    <img
+                      src="../../assets/images/cef_logo.png"
+                      alt="cef logo"
+                    />
+                    <h1 class="text-base font-bold">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </h1>
+                    <button class="certificate-card-button-orange">
+                      Name of status
+                    </button>
+                  </div>
                 </div>
-                <div class="card-item">
-                  <img src="../../assets/icons/map-white-icon.svg" alt="map" />
-                  <span style="margin-left: 4px">Ljubljana, Slovenia</span>
-                </div>
-                <button class="acitvity-button-white">Workshop</button>
               </div>
             </div>
-          </div>
-        </section>
+
+            <!-- current activites -->
+            <div id="groups" class="profile-section">
+              <div class="activities-text">
+                <h1 class="text-base font-bold">Groups</h1>
+                <p class="text-sm gray">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+
+              <div class="overflow-layout">
+                <div class="overflow-card-container">
+                  <div class="group-card">
+                    <div class="group-avatar">G</div>
+                    <h1 class="text-base font-bold">Group name one</h1>
+                    <a href="" class="gray text-sm">View details</a>
+                  </div>
+
+                  <div class="group-card">
+                    <div class="group-avatar">G</div>
+                    <h1 class="text-base font-bold">Group name one</h1>
+                    <a href="" class="gray text-sm">View details</a>
+                  </div>
+
+                  <div class="group-card">
+                    <div class="group-avatar">G</div>
+                    <h1 class="text-base font-bold">Group name one</h1>
+                    <a href="" class="gray text-sm">View details</a>
+                  </div>
+                  <div class="group-card">
+                    <div class="group-avatar">G</div>
+                    <h1 class="text-base font-bold">Group name one</h1>
+                    <a href="" class="gray text-sm">View details</a>
+                  </div>
+                  <div class="group-card">
+                    <div class="group-avatar">G</div>
+                    <h1 class="text-base font-bold">Group name one</h1>
+                    <a href="" class="gray text-sm">View details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- current activites -->
+            <div id="current-activities" class="profile-section">
+              <div class="activities-text">
+                <h1 class="text-base font-bold">Current activities</h1>
+                <p class="text-sm gray">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+
+              <div class="overflow-layout">
+                <div class="overflow-card-container">
+                  <div class="acitvity-card">
+                    <h1 class="text-base font-bold">
+                      Programming Structural Reforms for the ERP 2023-2025:
+                      Albania (By Invitation)
+                    </h1>
+                    <div class="card-item">
+                      <img
+                        src="../../assets/icons/calendar-icon.svg"
+                        alt="koledar"
+                      />
+                      <span>Oct 18 – 20, 2022</span>
+                    </div>
+                    <div class="card-item">
+                      <img src="../../assets/icons/map-icon.svg" alt="map" />
+                      <span style="margin-left: 4px">Ljubljana, Slovenia</span>
+                    </div>
+                    <button class="acitvity-button">Workshop</button>
+                  </div>
+
+                  <div class="acitvity-card">
+                    <h1 class="text-base font-bold">
+                      Programming Structural Reforms for the ERP 2023-2025:
+                      Albania (By Invitation)
+                    </h1>
+                    <div class="card-item">
+                      <img
+                        src="../../assets/icons/calendar-icon.svg"
+                        alt="koledar"
+                      />
+                      <span>Oct 18 – 20, 2022</span>
+                    </div>
+                    <div class="card-item">
+                      <img src="../../assets/icons/map-icon.svg" alt="map" />
+                      <span style="margin-left: 4px">Ljubljana, Slovenia</span>
+                    </div>
+                    <button class="acitvity-button">Workshop</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Past activites -->
+            <div id="past-activities" class="profile-section">
+              <div class="activities-text">
+                <h1 class="text-base font-bold">Past activities</h1>
+                <p class="text-sm gray">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+
+              <div class="overflow-layout">
+                <div class="overflow-card-container">
+                  <div class="past-acitvity-card">
+                    <h1 class="text-base font-bold">
+                      Programming Structural Reforms for the ERP 2023-2025:
+                      Albania (By Invitation)
+                    </h1>
+                    <div class="card-item">
+                      <img
+                        src="../../assets/icons/calendar-white-icon.svg"
+                        alt="koledar"
+                      />
+                      <span>Oct 18 – 20, 2022</span>
+                    </div>
+                    <div class="card-item">
+                      <img
+                        src="../../assets/icons/map-white-icon.svg"
+                        alt="map"
+                      />
+                      <span style="margin-left: 4px">Ljubljana, Slovenia</span>
+                    </div>
+                    <button class="acitvity-button-white">Workshop</button>
+                  </div>
+
+                  <div class="past-acitvity-card">
+                    <h1 class="text-base font-bold">
+                      Programming Structural Reforms for the ERP 2023-2025:
+                      Albania (By Invitation)
+                    </h1>
+                    <div class="card-item">
+                      <img
+                        src="../../assets/icons/calendar-white-icon.svg"
+                        alt="koledar"
+                      />
+                      <span>Oct 18 – 20, 2022</span>
+                    </div>
+                    <div class="card-item">
+                      <img
+                        src="../../assets/icons/map-white-icon.svg"
+                        alt="map"
+                      />
+                      <span style="margin-left: 4px">Ljubljana, Slovenia</span>
+                    </div>
+                    <button class="acitvity-button-white">Workshop</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div id="sticky-banner">
+        <div class="banner-wrapper">
+          <button class="banner-button cancel">Cancel</button>
+          <button class="banner-button update">Update</button>
+        </div>
       </div>
     </main>
 
     <section id="footer">
       <h1 class="header-lg">Footer</h1>
     </section>
+
+    <script src="./profile.js"></script>
+    <script src="./drag.js"></script>
   </body>
 </html>
