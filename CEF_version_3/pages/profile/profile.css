@@ -69,14 +69,14 @@ p {
 
 .profile-inputs {
   display: flex;
-  flex-direction: row;
-  column-gap: 16px;
+  flex-direction: column;
+  row-gap: 16px;
 }
 
 .profile-input-group {
   display: flex;
-  flex-direction: column;
-  row-gap: 30px;
+  flex-direction: row;
+  column-gap: 30px;
 }
 
 .profile-input-group h3 {
@@ -460,5 +460,32 @@ p {
 
   .overflow-layout {
     margin-top: 24px;
+  }
+
+  #personal_data .profile-input-group div {
+    min-width: 90px;
+  }
+
+  #personal_data .profile-input-group {
+    column-gap: 85px;
+  }
+
+  #job_information .profile-input-group div {
+    min-width: 162px;
+  }
+
+  #job_information .profile-input-group {
+    column-gap: 12px;
+  }
+
+  .banner-wrapper {
+    padding: 10px 17px;
+    float: right;
+  }
+
+  .mobile-profile-input-group {
+    display: flex;
+    flex-direction: column !important;
+    row-gap: 8px;
   }
 }

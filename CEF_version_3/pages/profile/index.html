@@ -18,7 +18,7 @@
       <h1 class="header-lg">Navbar</h1>
     </section>
 
-    <main>
+    <main id="profile_layout">
       <div class="container">
         <div id="profile-page">
           <!-- profile header section -->
@@ -83,21 +83,6 @@
                     />
                   </div>
                   <div>
-                    <label for="birth_date" class="text-sm gray required"
-                      >Date of birth</label
-                    >
-                    <h3>01.01.1990</h3>
-                    <input
-                      type="text"
-                      id="birth_date"
-                      name="birth_date"
-                      class="hidden"
-                    />
-                  </div>
-                </div>
-
-                <div class="profile-input-group">
-                  <div>
                     <label for="last_name" class="text-sm gray required"
                       >Last name</label
                     >
@@ -109,6 +94,9 @@
                       class="hidden"
                     />
                   </div>
+                </div>
+
+                <div class="profile-input-group">
                   <div>
                     <label for="gender" class="text-sm gray required"
                       >Gender</label
@@ -123,6 +111,19 @@
                         </select>
                       </div>
                     </div>
+                  </div>
+
+                  <div>
+                    <label for="birth_date" class="text-sm gray required"
+                      >Date of birth</label
+                    >
+                    <h3>01.01.1990</h3>
+                    <input
+                      type="text"
+                      id="birth_date"
+                      name="birth_date"
+                      class="hidden"
+                    />
                   </div>
                 </div>
               </div>
@@ -152,45 +153,6 @@
                     />
                   </div>
                   <div>
-                    <label for="organization_name" class="text-sm gray required"
-                      >Organizational unit name</label
-                    >
-                    <h3>Official name</h3>
-                    <input
-                      type="text"
-                      id="organization_name"
-                      name="organization_name"
-                      class="hidden"
-                    />
-                  </div>
-                  <div>
-                    <label for="work_phone" class="text-sm gray required"
-                      >Work phone</label
-                    >
-                    <h3>00 000 00 00</h3>
-                    <input
-                      type="tel"
-                      id="work_phone"
-                      name="work_phone"
-                      class="hidden"
-                    />
-                  </div>
-                  <div>
-                    <label for="work_email" class="text-sm gray required"
-                      >Work email</label
-                    >
-                    <h3>mail@cef-see.org</h3>
-                    <input
-                      type="email"
-                      id="work_email"
-                      name="work_email"
-                      class="hidden"
-                    />
-                  </div>
-                </div>
-
-                <div class="profile-input-group">
-                  <div>
                     <label for="insitution_name" class="text-sm gray required"
                       >Official name of insitution in English</label
                     >
@@ -202,6 +164,22 @@
                       class="hidden"
                     />
                   </div>
+                </div>
+
+                <div class="profile-input-group">
+                  <div>
+                    <label for="organization_name" class="text-sm gray required"
+                      >Organizational unit name</label
+                    >
+                    <h3>Official name</h3>
+                    <input
+                      type="text"
+                      id="organization_name"
+                      name="organization_name"
+                      class="hidden"
+                    />
+                  </div>
+
                   <div>
                     <label for="country" class="text-sm gray required"
                       >Country</label
@@ -217,6 +195,21 @@
                       </div>
                     </div>
                   </div>
+                </div>
+
+                <div class="profile-input-group">
+                  <div>
+                    <label for="work_phone" class="text-sm gray required"
+                      >Work phone</label
+                    >
+                    <h3>00 000 00 00</h3>
+                    <input
+                      type="tel"
+                      id="work_phone"
+                      name="work_phone"
+                      class="hidden"
+                    />
+                  </div>
                   <div>
                     <label for="mobile_phone" class="text-sm gray required"
                       >Mobile phone</label
@@ -226,6 +219,21 @@
                       type="tel"
                       id="mobile_phone"
                       name="mobile_phone"
+                      class="hidden"
+                    />
+                  </div>
+                </div>
+
+                <div class="profile-input-group">
+                  <div>
+                    <label for="work_email" class="text-sm gray required"
+                      >Work email</label
+                    >
+                    <h3>mail@cef-see.org</h3>
+                    <input
+                      type="email"
+                      id="work_email"
+                      name="work_email"
                       class="hidden"
                     />
                   </div>
@@ -256,9 +264,11 @@
                       name="current_passwrd"
                     />
                   </div>
+                </div>
+                <div class="profile-input-group hidden">
                   <div>
                     <label for="new_password" class="text-sm gray required"
-                      >Organizational unit name</label
+                      >New passowrd</label
                     >
                     <input
                       type="password"
@@ -266,6 +276,8 @@
                       name="new_password"
                     />
                   </div>
+                </div>
+                <div class="profile-input-group hidden">
                   <div>
                     <label for="confirm_password" class="text-sm gray required"
                       >Confirm password</label
