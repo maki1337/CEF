@@ -401,6 +401,20 @@ label {
   padding-bottom: 15px;
 }
 
+.overflow-layout {
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.overflow-card-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: hidden;
+  cursor: grab;
+  user-select: none;
+}
+
 @media screen and (max-width: 560px) {
   #events,
   #past-events {
@@ -447,6 +461,15 @@ label {
 
   .filter-showcase {
     padding: 40px 18px !important;
+  }
+
+  #past-events .event-card {
+    min-width: 330px;
+  }
+
+  #past-events {
+    padding-bottom: 85px;
+    padding-top: 40px;
   }
 }
 
