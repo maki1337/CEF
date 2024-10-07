@@ -444,6 +444,10 @@ label {
   #filter p {
     display: none;
   }
+
+  .filter-showcase {
+    padding: 40px 18px !important;
+  }
 }
 
 body.no-scroll {
