@@ -13,32 +13,26 @@ document.addEventListener("DOMContentLoaded", function () {
   editProfileBtn.addEventListener("click", () => {
     stickyBanner.classList.add("visible");
 
-    // Hide change-password-btn
     changePasswordBtn.classList.add("hidden");
 
-    // Add the mobile-profile-input-group class to all .profile-input-group elements
     profileInputGroups.forEach((group) => {
       group.classList.add("mobile-profile-input-group");
-      group.classList.remove("hidden"); // Show all password input groups
+      group.classList.remove("hidden");
     });
 
-    // Select all h3 elements and input/select elements within the .profile-input-group
     const h3Elements = document.querySelectorAll(".profile-input-group h3");
     const inputs = document.querySelectorAll(
       ".profile-input-group input, .profile-input-group select"
     );
 
-    // Hide all h3 elements
     h3Elements.forEach((h3) => {
       h3.classList.add("hidden");
     });
 
-    // Show all input and select elements
     inputs.forEach((input) => {
       input.classList.remove("hidden");
     });
 
-    // Also show select parents if they're hidden
     const selectParents = document.querySelectorAll(
       ".profile-input-group .select-parent"
     );
@@ -50,32 +44,26 @@ document.addEventListener("DOMContentLoaded", function () {
   changePasswordBtn.addEventListener("click", () => {
     stickyBanner.classList.add("visible");
 
-    // Hide change-password-btn
     changePasswordBtn.classList.add("hidden");
 
-    // Add the mobile-profile-input-group class to all .profile-input-group elements
     profileInputGroups.forEach((group) => {
       group.classList.add("mobile-profile-input-group");
-      group.classList.remove("hidden"); // Show all password input groups
+      group.classList.remove("hidden");
     });
 
-    // Select all h3 elements and input/select elements within the .profile-input-group
     const h3Elements = document.querySelectorAll(".profile-input-group h3");
     const inputs = document.querySelectorAll(
       ".profile-input-group input, .profile-input-group select"
     );
 
-    // Hide all h3 elements
     h3Elements.forEach((h3) => {
       h3.classList.add("hidden");
     });
 
-    // Show all input and select elements
     inputs.forEach((input) => {
       input.classList.remove("hidden");
     });
 
-    // Also show select parents if they're hidden
     const selectParents = document.querySelectorAll(
       ".profile-input-group .select-parent"
     );
@@ -88,7 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
     stickyBanner.classList.remove("visible");
     alert("Information updated!");
 
-    // Remove the mobile-profile-input-group class from all elements
     profileInputGroups.forEach((group) => {
       group.classList.remove("mobile-profile-input-group");
     });
@@ -97,11 +84,30 @@ document.addEventListener("DOMContentLoaded", function () {
   cancelButton.addEventListener("click", () => {
     stickyBanner.classList.remove("visible");
 
-    // Revert changes on cancel: show change-password-btn again and hide password input groups
     changePasswordBtn.classList.remove("hidden");
     profileInputGroups.forEach((group) => {
-      group.classList.add("hidden");
       group.classList.remove("mobile-profile-input-group");
+    });
+
+    const passwordInputGroup = document.querySelectorAll(
+      "#password_information .profile-input-group"
+    );
+
+    passwordInputGroup.forEach((group) => {
+      group.classList.add("hidden");
+    });
+
+    const h3Elements = document.querySelectorAll(".profile-input-group h3");
+    const inputs = document.querySelectorAll(
+      ".profile-input-group input, .profile-input-group select"
+    );
+
+    h3Elements.forEach((h3) => {
+      h3.classList.remove("hidden");
+    });
+
+    inputs.forEach((input) => {
+      input.classList.add("hidden");
     });
   });
 });
